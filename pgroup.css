@@ -384,7 +384,7 @@ main{
      align-items: center;
      margin: 0 0 0 3em;
      padding: 0 0 0 0;
-     border-radius: 10em 50em 50em 5em;
+     border-radius: 50em 50em 50em 50em;
      
 }
 
@@ -406,7 +406,7 @@ main{
     background: #fffefee5;
     width: 36rem;
     height: 15rem;
-    border-radius: 10em 50em 50em 5em;
+    border-radius: 50em 50em 50em 50em;
   }
   
   /* Slides */
@@ -489,16 +489,17 @@ main{
 .confiance {
     display: flex;
      flex-direction: column;
-     width: 65em;
+     width: 50em;
      height: 40%;
+     background-image: url(assets/background_pgroup/bg_marbre.jpg);
      background-repeat: no-repeat;
      background-size: cover;
      justify-content: center;
      align-items: center;
-     margin: 0;
+     margin: 0 4em 0 5em;
      padding-top: 0;
      top: 0;
-     border-radius: 10em 50em 10em 50em;
+     border-radius: 2em 2em 2em 2em;
 }
 
 .confiance-title {
@@ -757,7 +758,6 @@ footer {
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     justify-content: space-around;
     height: 70%;
@@ -834,7 +834,7 @@ footer {
     
   }
   
-  input[type=radio]:checked {
+  #slider-eve input[type=radio]:checked {
     background: #FF5A5F;  /* Airbnb's coral red */
     border: 2px solid #FF5A5F;  /* Airbnb's coral red */
   }
@@ -851,68 +851,7 @@ footer {
     transition: transform 400ms ease, opacity 400ms ease;  /* Added opacity transition */
     
   }
-  
-  /* New addition for Zoom Effect */
-  .zoom-container {
-    overflow: hidden; /* Hide the part of the image that extends outside the div */
-  
-  }
-  
-  /* Zoom effect */
-  .zoom-container:hover {
-    cursor: default; /* Change cursor to zoom-in icon */
-  }
-  
-  .zoom-container:hover img {
-    transform: scale(1.7); /* Zoom level */
-    transition: transform .5s ease-in-out;
-  }
-  
-  /* Existing transition rules */
-  #s1:checked ~ #slide1, 
-  #s2:checked ~ #slide2, 
-  #s3:checked ~ #slide3, 
-  #s4:checked ~ #slide4, 
-  #s5:checked ~ #slide5 {
-    box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2);
-    transform: translate3d(0%, 0, 0px);
-  }
-  
-  #s1:checked ~ #slide2, 
-  #s2:checked ~ #slide3, 
-  #s3:checked ~ #slide4, 
-  #s4:checked ~ #slide5, 
-  #s5:checked ~ #slide1 {
-    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
-    transform: translate3d(20%, 0, -100px);
-  }
-  
-  #s1:checked ~ #slide3,
-  #s2:checked ~ #slide4,
-  #s3:checked ~ #slide5,
-  #s4:checked ~ #slide1,
-  #s5:checked ~ #slide2 {
-    box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
-    transform: translate3d(40%, 0, -250px);
-  }
-  
-  #s1:checked ~ #slide4,
-  #s2:checked ~ #slide5,
-  #s3:checked ~ #slide1,
-  #s4:checked ~ #slide2,
-  #s5:checked ~ #slide3 {
-    box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
-    transform: translate3d(-40%, 0, -250px);
-  }
-  
-  #s1:checked ~ #slide5,
-  #s2:checked ~ #slide1,
-  #s3:checked ~ #slide2,
-  #s4:checked ~ #slide3,
-  #s5:checked ~ #slide4 {
-    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
-    transform: translate3d(-20%, 0, -100px);
-  }
+
 
   /* ----------- FIN CAROUSSEL EVENEMENT  --------- ---*/
 
@@ -924,6 +863,7 @@ footer {
     height: auto;
     background: url("assets/background_pgroup/bg_marbre.jpg")no-repeat;background-size:cover;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 0 0 0 5em;
 }
 
 #qsn {
@@ -1009,8 +949,8 @@ footer {
     
 }
 
-.field country {
-    background-color: rgb(17, 26, 5);
+.field select {
+    background-color: rgb(227, 225, 225);
 }
 
 .field ::placeholder {
@@ -1046,7 +986,7 @@ input[type=text], textarea, input[type=email] {
     margin-left: 2em;
     width: 100%;
     font-size: 1.5em;
-    font-family: Nova Cut;
+    font-family: 'Nova Cut';
 }
   
   input[type=submit] {
@@ -1332,7 +1272,6 @@ input[type=text], textarea, input[type=email] {
     
     .textcontent-service {
         font-size: 40%;
-        text-align: left;
         padding: 0rem 2rem 2rem 2rem;
         text-align: justify;
        
@@ -1378,7 +1317,7 @@ input[type=text], textarea, input[type=email] {
         background: #fffefee5;
         width: 36rem;
         height: 15rem;
-        border-radius: 10em 50em 50em 5em;
+        border-radius: 50em 50em 50em 50em;
       }
       
       /* Slides */
@@ -1780,7 +1719,7 @@ input[type=text], textarea, input[type=email] {
          width: 100%;
          height: auto;         
          margin: 0 0 3em 0em;  
-         border-radius: 10em 10em 50em 50em;     
+         border-radius: 50em 50em 50em 50em; 
         
     }
 
@@ -1790,7 +1729,7 @@ input[type=text], textarea, input[type=email] {
         color: #fbc467;
         font-size: xx-large;
         display: flex;
-        padding: 0.7em 0.7em 0.3em 0;
+        padding: 0.7em 0.7em 1em 0;
         
 
     }
@@ -1805,8 +1744,8 @@ input[type=text], textarea, input[type=email] {
         align-items: center;
         width: 80%;
         height: auto;         
-        margin: 0 0 3em 0em;  
-        border-radius: 10em 10em 50em 50em;
+        margin: 0 0 2em 0em;  
+        border-radius: 50em 50em 50em 50em;
         text-align: justify;
         padding: 0 0 2em 0;     
       }
@@ -1841,7 +1780,7 @@ input[type=text], textarea, input[type=email] {
     }
    
      /* Add a blue color to the author */
-     .author {color: rgb(172, 110, 1);
+     .author {color: rgb(17, 72, 182);
                font-size: x-large;
            font-weight: bold;
            text-align: center;
@@ -1862,6 +1801,7 @@ input[type=text], textarea, input[type=email] {
             color: #ffffff;
             font-size: large;
             display: flex;
+            text-align: center;
             padding: 0.5em 2em 2em 2em;
            
         }
