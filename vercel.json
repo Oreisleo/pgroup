@@ -1,16 +1,4 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "pgroup.html", "use": "@now/static" },
-    { "src": "pgroup.css", "use": "@now/static" },
-    { "src": "pgroup.js", "use": "@now/static" }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/pgroup.html" }
-  ],
-  "functions": {
-    "api/**/*.js": {
-      "runtime": "nodejs16"
-    }
-  }
+  "rewrites": [{"source": "/(.*)", "destination": "/"}
+  ]
 }
