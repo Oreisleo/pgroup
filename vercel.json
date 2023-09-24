@@ -1,10 +1,7 @@
-{
-    "build": {
-      "files": ["pgroup projet/**/*"],
-      "entryPoints": ["pgroup projet/pgroup.html"]
-    },
-    "routes": [
-      { "src": "/", "dest": "/pgroup projet/pgroup.html" }
-    ]
-  }
-  
+{ "version" : 2 ,
+  "builds": [{ "src": "pgroup projet/pgroup.html", "use": "@vercel/static-build" }],
+  "routes": [
+    { "src": "/(.*)", "dest": "pgroup projet/pgroup.html" }
+  ]
+}
+
