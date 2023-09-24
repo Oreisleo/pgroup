@@ -1,11 +1,11 @@
 {
     "version": 2,
     "builds": [{
-      "src": "pgroup.html",
-      "use": "@vercel/node"
+      "src": "pgroup.js",
+      "use": "@vercel/js"
     }],
     "routes": [{
       "src": "/(.*)",
-      "dest": "pgroup.html"
+      "dest": "pgroup.js"
     }]
    }
