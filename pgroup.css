@@ -2124,7 +2124,7 @@ input[type=text], textarea, input[type=email] {
     }
     
     .condition-list ul li {
-        width:100%;
+        width:80%;
          font-size: 1px;
         font-family: 'Trebuchet MS',  sans-serif;
     }
