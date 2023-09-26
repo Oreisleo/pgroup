@@ -1447,6 +1447,7 @@ input[type=text], textarea, input[type=email] {
       #contact-container {
         width: 100vw;
         height: auto;
+        padding: 0 2em 0 1em;
     }
     
     #qsn {
@@ -1953,6 +1954,8 @@ input[type=text], textarea, input[type=email] {
         flex-direction: column;
         width: 100vw;
         height: auto;
+        justify-content: center;
+        padding: 0 1em 0 1em;
     }
     
     #qsn {

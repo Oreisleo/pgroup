@@ -1,17 +1,4 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "pgroup.html",
-      "use": "@now/static"
-    },
-    {
-      "src": "pgroup.css",
-      "use": "@now/static"
-    },
-    {
-      "src": "pgroup.js",
-      "use": "@now/static"
-    }
+  "rewrites": [{"source": "/(.*)", "destination": "/"}
   ]
 }
