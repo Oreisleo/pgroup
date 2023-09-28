@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css2? family= Nova+Cut & display=swap');
 
 html {
     
@@ -20,6 +21,7 @@ body {
     padding: 0;
     background-color: rgba(240, 244, 209, 0.978);
     overflow-x: hidden;
+    font-family: 'Nova Cut', sans-serif;
 }
 
 
@@ -32,7 +34,7 @@ body {
     grid-row-gap: 0px;
     margin: 0;
     padding: 0;
-    background-color: yellow;
+    
 
 }
 
@@ -229,7 +231,6 @@ main{
     justify-content: center;
     height: auto;
     width: 100%;
-    background-color:rgb(255, 255, 255);
     flex-direction: column;
 }
 
@@ -240,8 +241,6 @@ main{
     grid-row-gap: 0px;
     display: flex;
     flex-direction: column;
-
-    
 }
 
 .parallax-effect {
@@ -259,11 +258,7 @@ main{
         grid-area: 1 / 1 / 4 / 13;
         width: 100vw;
         margin-top: -6em;
-        
-        
 }
-
- 
 
 .parallax-effect-2 {
        background-image: url("assets/background_pgroup/bg_marbre.jpg");
@@ -277,7 +272,6 @@ main{
         display: flex;
         align-items: center;
         grid-area: 4 / 1 / 6 / 13;
-        
 }
 
 
@@ -316,20 +310,20 @@ main{
     height: auto;
     text-align: justify;
     box-shadow: 0px 20px 35px 10px rgba(114, 98, 69, 0.266);
-    border-radius: 25px 200px 15px 15px ;
+    border-radius: 190px 190px 15px 15px ;
     background-color: rgba(255, 253, 248, 0.255);
     margin: 0 0 4em 0;
+
 }
 
 
 
 
 .image-service {
-   width: 140px;
-   height: 100px;
-   border-radius: 20rem 20rem 20rem 20rem;
-   padding: 2rem 0 0 2rem;
-   margin: -5rem 0 0 -1.5rem;
+   width: 35%;
+   height: auto;
+   border-radius: 20rem 20rem 20rem 20rem;   
+   margin: -1em 0 0 3.5em;
    
 }
 
@@ -337,9 +331,9 @@ main{
     font-family: 'Nova Cut', cursive;
     color: #000000;
     flex-direction: column;
-    align-items: center;
-    text-align: left;
-    padding: 2rem 1.5rem 1rem 1.5rem;
+    justify-content: center;
+    text-align: center;
+    padding: 1em 0em 1rem 0em;
     font-style: bold;
    
     
@@ -348,6 +342,7 @@ main{
 .subtitle {
    color: #c73c05;
    font-size: 60%;
+   padding: 0em 1em 0em 1.5em;
 }
 
 
@@ -714,7 +709,7 @@ footer {
     grid-row-gap: 0px;
     height: auto;
     width: 100vw;
-    background-color: rgb(78, 251, 44);
+    
 }
 
 #evenement-container {
@@ -784,6 +779,9 @@ footer {
     font-size: 1.5em;
     font-weight: bolder;
     border-style: double ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 
 
 }
@@ -1093,22 +1091,31 @@ input[type=text], textarea, input[type=email] {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: center;
-    width: 100vw;
+   text-align: center;
+   width: 90%;
    height: auto;
+   box-sizing: border-box; 
+   padding: 0 0 0.5em 0;
+
+   
 }
 
 .condition-list p {
     color: #a7a2a2c1;
-    font-size: 10px;
+    font-size: 1px;
+    font-family: 'Lucida Sans', sans-serif;
     
 }
 
 .condition-list ul {
+    box-sizing: border-box;
     display: flex;
+    width: 100%;
+    height: auto; 
     flex-direction: row;
     justify-content:center;
-    align-items: center;
+    text-align: center;
+    font-size: 1px;
 }
 
 .icon_copyright {
@@ -1234,22 +1241,21 @@ input[type=text], textarea, input[type=email] {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        width: 40%;
+        width: 43%;
         height: auto;
         text-align: justify;
         box-shadow: 0px 20px 35px 10px rgba(114, 98, 69, 0.266);
-        border-radius: 20em 60em 10em 10em ;
+        border-radius: 190px 190px 15px 15px ;
         background-color: rgba(255, 253, 248, 0.255);
         margin: 0 0 4em 0;
     }
 
 
     .image-service {
-       width: 45%;
+      width: 40%;
        height: auto;
        border-radius: 20rem 20rem 20rem 20rem;
-       padding: 2rem 0 0 2rem;
-       margin: -5rem 0 0 -1.5rem;
+       margin: -1em 0 0 2.5em;
        
     }
     
@@ -1258,9 +1264,8 @@ input[type=text], textarea, input[type=email] {
         color: #000000;
         font-size: 75%;
         flex-direction: column;
-        align-items: center;
-        text-align: left;
-        padding: 2rem 1.5rem 1rem 1.5rem;
+        text-align: center;
+        padding: 1em 0em 1rem 0em;
         font-style: bold;
     }
     
@@ -1429,6 +1434,14 @@ input[type=text], textarea, input[type=email] {
         font-size: 1em;
     }
     
+    #reserve button:active {
+        background-color: #ffb702;
+        zoom: 110%;
+        border: rgb(244, 229, 147);
+        border-style: double;
+        border-width: 5px;
+
+    }
 
     
     #reserve p {
@@ -1685,13 +1698,24 @@ input[type=text], textarea, input[type=email] {
     .image-service {
        width: 35%;
        height: auto;
+       border-radius: 20rem 20rem 20rem 20rem;   
+       margin: -0.75em 0 0 2.5em;
 
     }
     
     .subheader-service {
         font-size: 75%;
-     
+        text-align: center;
+        padding: 1em 1.5em 1rem 1.5em;
     }
+
+    .subtitle {
+        color: #c73c05;
+        font-size: 60%;
+        text-align: center;
+        padding: 0em 1em 1em 0em;
+     }
+
     .textcontent-service {
         font-size: 40%;
         text-align: left;
@@ -1702,7 +1726,6 @@ input[type=text], textarea, input[type=email] {
     .textcontent-service li {
         line-height: 0;
     }
-    
 
     #avis-confiance {
         width: 80%;
@@ -1923,15 +1946,22 @@ input[type=text], textarea, input[type=email] {
     #reserve {
         padding: 0;
         margin: 6em 0 0 4em;
-        
-    
+
     }
-    
+
     #reserve button {
         border-width: 5px;
         font-size: 1em;
     }
-    
+
+    #reserve button:active {
+        background-color: #ffb702;
+        zoom: 110%;
+        border: rgb(244, 229, 147);
+        border-style: double;
+        border-width: 5px;
+
+    }
 
     
     #reserve p {
@@ -2118,16 +2148,39 @@ input[type=text], textarea, input[type=email] {
         zoom: 110%
     }
     
+      
     .condition-list{
-       width:  100%;
-       height: auto;
-    }
-    
-    .condition-list ul li {
-        width:80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 90%;
+        height: auto;
+        box-sizing: border-box; 
+        padding: 0 1em 0.5em 1em;
+        margin:  0 1em 0 1em;
+     
+        
+     }
+     
+     .condition-list p {
+         color: #a7a2a2c1;
          font-size: 1px;
-        font-family: 'Trebuchet MS',  sans-serif;
-    }
+         font-family: 'Lucida Sans', sans-serif;
+         padding: 0 1em 0.5em 1em;
+         
+     }
+     
+     .condition-list ul {
+         box-sizing: border-box;
+         display: flex;
+         width: 90%;
+         height: auto; 
+         flex-direction: row;
+         justify-content:center;
+         text-align: center;
+         font-size: 1px;
+     }
     
     .icon_copyright {
         width: 10px;
