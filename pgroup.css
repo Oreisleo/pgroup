@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 @import url('https://fonts.googleapis.com/css2? family= Nova+Cut & display=swap');
+@font-face {
+    font-family: 'Nova Cut';
+    src: url('fonts/NovaCut-Regular.ttf') format('truetype');
+    /* Autres propriétés de police (comme font-weight et font-style) si nécessaire */
+}
 
 html {
     
