@@ -112,6 +112,40 @@ document.querySelectorAll('.zoom-container').forEach((container) => {
 //  FIN CAROUSSEL REALISATION  //
 
 
+//-----pop up button reserve //_
+//Créer une variable pour le bouton
+const button = document.querySelector("button");
+
+// Créer une fonction pour afficher le message pop-up
+function showPopup() {
+  // Afficher le message pop-up
+  document.getElementById("popup_reserve").style.display = "block";
+}
+
+// Ajouter un événement de clic au bouton
+button.addEventListener("click", showPopup);
+
+// Créer une fonction pour fermer le pop-up
+function closePopup() {
+  // Fermer le pop-up
+  document.getElementById("popup_reserve").style.display = "none";
+}
+
+// Ajouter un événement de clic à la croix rouge
+const closeButton = document.querySelector(".close");
+closeButton.addEventListener("click", closePopup);
+
+// Ajouter un événement de clic à la page
+window.addEventListener("scroll", closePopup)
+
+
+
+
+
+// ---fin popup reseve   ---// 
+
+
+
 //  DEBUT  CAROUSSEL CONFIANCE  //
 
 // imagesLoaded.js, Hammer.js, and Sequence.js loaded as external assets

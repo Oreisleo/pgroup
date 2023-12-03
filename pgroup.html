@@ -6,6 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pgroup.css">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K6WMHKKB9N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K6WMHKKB9N');
+</script>
+
     <style>
       @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
     </style>
@@ -39,7 +50,7 @@
 
 <!--------------------------  HEADER  --------------------------->
 
-    <header>
+    <div id="header">
       <div id="logo-header"><a href="#navbar"><img id="logo"
                                 src="/assets/logo_pgroup/logo_site_pgroup.png"
                                 alt="logo_pgroup"></a>
@@ -73,7 +84,7 @@
           <li><a href="#contact-container">Contact</a></li>
         </ul>
       </div>
-    </header>
+    </div>
 
 <!-------------------------  MAIN  ------------------------------->
 
@@ -84,7 +95,7 @@
 <!---------------------- Parralax 2 ------------------------------>
 
          <div class="parallax-effect"></div>
-         <div style="height: auto; width: 100vw; font-size: 36px; text-align: center; font-family: 'Raleway', Arial, sans-serif; background-image: url(assets/background_pgroup/bg_1.png);
+         <div style="height: auto; width: 100%; font-size: 36px; text-align: center; font-family: 'Raleway', Arial, sans-serif; background-image: url(assets/background_pgroup/bg_1.png);
          background-repeat: no-repeat;
          background-size: cover; display: grid;
         grid-area: 1 / 1 / 4 / 13; padding: 0 0 8em 0; box-sizing: border-box;  ">
@@ -93,7 +104,7 @@
 
 <!------------------ SERVICE container row 1 --------------------->
 
-         <div id="titre-service">SERVICES</div>
+         <div id="titre-service">NOS SERVICES</div>
 
           <div id="bloc-service-1">
 
@@ -117,7 +128,7 @@
             <div class="type-service-1">
               <img class="image-service" src="assets/image_pgroup/service image hotesse.jpg" alt="logo-service">
               <div class="subheader-service">
-                <p> CREATION <br> DE SUPPORT<p class="subtitle"> de Communication </p></p>
+                <p> CREATION  <br> SUPPORT<p class="subtitle"> de Communication </p></p>
               </div>
               <div class="textcontent-service">
                 <p>Nos supports de qualité susciteront l’attention des participants et donneront envie de collaborer avec vous:  <br><br>
@@ -257,10 +268,8 @@
     <!--------------------  DEBUT caroussel vertical CONFIANCE ---------------->
                  
       <div class="partenaire">
-        <img class="img" src="assets/logo_pgroup/airbnb-logo wbg.png" alt="airbnb">
-        <img class="img" src="assets/logo_pgroup/logo confiance pgroup 3.png" alt="Booking">
         <img class="img" src="assets/logo_pgroup/logo-pgroup-wbg.png" alt="pgroup">
-        <img class="img" src="assets/logo_pgroup/logo booking.png" alt="bookking">
+        
         <img class="img" src="assets/logo_pgroup/logo harolds night club.jpg" alt="harolds_night_club">
       </div>
     
@@ -278,7 +287,7 @@
 
           <div id="realisation-container">
 
-            <div id="titre-realisation">REALISATION</div>
+            <div id="titre-realisation">REALISATIONS</div>
 
 <!------------------- DEBUT CAROUSSEL REALISATION   --------------------------->
 
@@ -368,6 +377,15 @@
         <div id="reserve">
           <button>Reservez !</button>
           <p>Cliquez et reservez pour votre évènement.</p>
+          <div id="popup_reserve">
+            <h1>Bientôt disponible... <br>  <br></h1> 
+            <div class="close" title="Fermer">X </div>
+            <p1>Pas d'évènement en cours pour le moment... 
+              <br> <br> Si vous souhaitez être informé lorsqu'un évènement est disponible? 
+              <br> <br> Remplissez le formulaire de contact <a href="#contact-container"><span title="Cliquez ici">ci-dessous.</span></a> </p1>
+              
+          </div>
+          </div>
         </div>
       </div>
       </div>
@@ -429,7 +447,9 @@
 
     
   </form>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51445.33207483087!2d-6.83729680507018!3d33.952710138460716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76b871f50c5c1%3A0x7ac946ed7408076b!2sRabat%2C%20Maroc!5e0!3m2!1sfr!2sfr!4v1695494935675!5m2!1sfr!2sfr" target="_blank"  width="550" height="300" style="border-radius: 10px 10px 10px 10px; margin: 3em 11em 4em 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localisation"></iframe>
+  <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51445.33207483087!2d-6.83729680507018!3d33.952710138460716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76b871f50c5c1%3A0x7ac946ed7408076b!2sRabat%2C%20Maroc!5e0!3m2!1sfr!2sfr!4v1695494935675!5m2!1sfr!2sfr"
+      target="_blank"  width="550" height="300" style="border-radius: 10px 10px 10px 10px; margin: 3em 11em 4em 0;" 
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localisation"></iframe>-->
         </div>
       </div>
 
@@ -440,7 +460,7 @@
         <div id="icon-rsx-container">
           <div id="find_us"><p>Retrouvez nous:</p></div> 
           <div id="icon-rsx-list">
-          
+            
         </div>
         </div>
 
@@ -464,4 +484,13 @@
   <script src="pgroup.js"></script>
 
 </body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPD49C2M"
+  height="0" width="0" style="display:none;visibility:hidden">
+  </iframe>
+</noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
 </html>
