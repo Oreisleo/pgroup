@@ -2,8 +2,10 @@
 @import url('https://fonts.googleapis.com/css2? family= Nova+Cut & display=swap');
 @font-face {
     font-family: 'Nova Cut';
-    src: url('fonts/NovaCut-Regular.ttf') format('truetype');
+    src: url('/fonts.group/NovaCut-Regular.ttf') format('truetype');
     /* Autres propriétés de police (comme font-weight et font-style) si nécessaire */
+    font-weight: normal;
+    font-style: normal;
 }
 
 html {
