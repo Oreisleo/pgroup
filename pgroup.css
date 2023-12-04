@@ -26,9 +26,8 @@ body {
     width: 100vw;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
-    
     overflow-x: hidden;
-    font-family: 'Nova Cut', sans-serif;
+    font-family: 'Nova Cut', cursive;
 }
 
 
@@ -133,22 +132,37 @@ a:hover {
 
 /*animation soulignage */
 
-.navbar_link a::after {
+/*.navbar_link a::after {
     position: absolute;
     content: ""; /* designe la barre qui passera sous le lien vers chaque page*/
-    left: 3em;
+    /*left: 3em;
     margin: 2.5em 0 10em 22.5em;
     width: 6.5em;
     height: 0.1em;
     
+}*/
+.navbar_link a {
+    border-bottom: 2px solid transparent; /* Le trait est transparent par défaut */
+    position: relative;    
+    display: inline-block;
+    transition: width 0.9s ease, left 0.9s ease; /* Animation pour une transition fluide */
 }
 
-a:hover::after { /*stylise la barre sous les liens vers les pages*/
-    background: rgb(245, 208, 90) ;
+.navbar_link a:hover {
+    background-color: #000000b2;
+    border-bottom-color: rgb(245, 208, 90); /* Couleur du trait lorsqu'on le survole */
+    width: 100%; /* Largeur complète pour faire apparaître le trait de gauche à droite */
+    left: 0; /* Position à gauche */
+    
+    
+}
+
+/*.navbar_link a:hover::after { /*stylise la barre sous les liens vers les pages*/
+    /*background: rgb(245, 208, 90) ;
     transform: scaleX(7);
     transform-origin: left;
     transition: transform 0.5s;/*sens dapparition de la barre*/
-}
+/*}*/
 
 #navbar{
     display: flex;
