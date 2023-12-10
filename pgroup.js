@@ -59,7 +59,7 @@ const changeSlide = () => {
   if (!isPaused) {
     document.getElementById(`s${currentSlideDone}`).checked = true;
     currentSlideDone++;
-    if (currentSlideDone > 5) {
+    if (currentSlideDone > 6) {
       currentSlideDone = 1;
     }
   }

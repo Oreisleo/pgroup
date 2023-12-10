@@ -130,6 +130,32 @@ a:hover {
     color: #f2ce3e;
 }
 
+/*debut test animation navbar*/
+.navbar_link a::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+.navbar_link a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    
+  }
+  
+  .navbar_link a::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: hsla(0, 0%, 0%, 0.888);
+    height: 2rem;
+    border-radius: 6px 6px 6px 6px;
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+
+/* fintest animation navbar*/
 /*animation soulignage */
 
 /*.navbar_link a::after {
@@ -148,14 +174,14 @@ a:hover {
     transition: width 0.9s ease, left 0.9s ease; /* Animation pour une transition fluide */
 }
 
-.navbar_link a:hover {
-    background-color: #000000b2;
-    border-bottom-color: rgb(245, 208, 90); /* Couleur du trait lorsqu'on le survole */
-    width: 100%; /* Largeur complète pour faire apparaître le trait de gauche à droite */
-    left: 0; /* Position à gauche */
+/*.navbar_link a:hover {
+    /*background-color: #000000b2;*/
+   /* border-bottom-color: rgb(245, 208, 90); /* Couleur du trait lorsqu'on le survole */
+    /*width: 100%; /* Largeur complète pour faire apparaître le trait de gauche à droite */
+   /* left: 0; /* Position à gauche */
     
     
-}
+/*}*/
 
 /*.navbar_link a:hover::after { /*stylise la barre sous les liens vers les pages*/
     /*background: rgb(245, 208, 90) ;
@@ -297,7 +323,8 @@ main{
         width: 100%;
         display: grid;
         display: flex;
-        
+        justify-content: flex-end;
+        align-content: flex-end;
         grid-area: 4 / 1 / 6 / 13;
 }
 
@@ -306,14 +333,14 @@ main{
     
     width: 22%;
     height: 1em;
-    padding: 0.75rem 0 0 0;
+    padding: 1rem 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Nova Cut', cursive;
     font-size: 2.5rem;
     border-radius: 0 20px ;
-    margin: 1rem 38rem 0 38rem;
+    margin: 2rem 38rem 0 38rem;
     text-decoration: underline #eab451;
 }
 
@@ -348,7 +375,7 @@ main{
 
 
 .image-service {
-   width: 35%;
+   width: 30%;
    height: auto;
    border-radius: 20rem 20rem 20rem 20rem;   
    margin: -1em 0 0 3.5em;
@@ -381,25 +408,40 @@ main{
     
 }
 .textcontent-service li {
-    line-height: 0;
+    line-height: normal;
+    margin: 0.3rem;
+    padding: 0.3rem;
+    display: flex;
+    overflow-wrap: normal;
 }
 
-#avis-confiance {
-    width: 100%;
+.textcontent-service p {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*................... AVIS - PARRALAX 2 ......................*/
+
+#avis-confiance {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    height: 38em;
+    align-items: center;
+    height: 100vh;
     margin: 0 0 0 0;
-    
+    padding: 0 1rem 0 1rem;
+    background: linear-gradient(
+   rgba(0, 0, 0, 0.71), 
+   rgba(0, 0, 0, 0.71))
     
 }
 
 .avis {
      display: flex;
      flex-direction: column;
-     width: 30%;
-     height: 100%;
+     width: 80%;
+     height: 55%;
      background-color: rgba(0, 0, 0, 0);
      background-repeat: no-repeat;
      background-size: cover;
@@ -418,8 +460,8 @@ main{
     font-size: xx-large;
     display: flex;
     justify-content: center;
-    padding: 0.7em 0 0 0;
-    margin: 0 0 1em 0;
+    padding: 1em 0 0 0;
+    margin: 0.3em 0 1em 0;
    
 }
 
@@ -428,10 +470,13 @@ main{
 /* Slideshow container */
 .slideshow-container {
     position: relative;
-    background: #ffffff;
-    width: 20rem;
-    height: 30rem;
+    background: #080808;
+    width: 100%;
+    height: 100%;
     border-radius: 0.5em 0.5em 0.5em 0.5em;
+    color: white;
+    display: flex;
+    align-items: center;
   }
   
   /* Slides */
@@ -450,7 +495,7 @@ main{
     width: auto;
     margin-top: -30px;
     padding: 16px;
-    color: #000000;
+    color: #ffffff;
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
@@ -466,7 +511,7 @@ main{
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
-    background-color: rgba(195, 160, 107, 0.567);
+    background-color: rgba(241, 241, 241, 0.567);
     color: white;
   }
   
@@ -491,22 +536,22 @@ main{
   
   /* Add a background color to the active dot/circle */
   .active, .dot:hover {
-    background-color: #717171;
+    background-color: #ffffff;
   }
   
   /* Add an italic font style to all quotes */
   q {font-style: italic;
-     font-size: x-large;
+     font-size: large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
  }
 
   /* Add a blue color to the author */
-  .author {color: rgb(172, 110, 1);
-            font-size: x-large;
+  .author {color: rgb(252, 199, 118);
+            font-size: large;
         font-weight: bold;
         text-align: end;
-        padding-top: 2rem;}
+        padding: 1rem 0 1rem 0;}
 
 
 /* ----------- FIN CAROUSSEL AVIS  --------- ---*/
@@ -514,14 +559,14 @@ main{
 .confiance {
     display: flex;
      flex-direction: column;
-     width: 30%;
-     height: 100%;
+     width: 80%;
+     height: 45%;
      background-color: rgba(0, 0, 0, 0);
      background-repeat: no-repeat;
      background-size: cover;
      justify-content: center;
      align-items: center;
-     margin: 0 0 0 5em;
+     margin: 0 0 0 0;
      padding-top: 0;
      top: 0;
      
@@ -530,10 +575,10 @@ main{
 .confiance-title {
     font-family: 'Nova Cut', cursive;
     font-weight: bolder;
-    color: #ffffff;
-    font-size: x-large;
+    color: rgb(255, 255, 255);
+    font-size: xx-large;
     display: flex;
-    padding: 0.5em 2em 2em 2em;
+    padding: 0  1em 2em 1em;
    
 }
 
@@ -593,7 +638,7 @@ main{
     font-family: 'Nova Cut', cursive;
     font-size: 2.5rem;
     border-radius: 0 20px ;
-    margin-top: 0.1em;
+    margin-top: 0.7em;
     text-decoration: underline rgb(234, 180, 81);
 
 }
@@ -748,13 +793,7 @@ footer {
     box-sizing: border-box;
     width: 100vw;
     height: 45rem;
-    background: linear-gradient(
-
-    rgb(0, 0, 0), 
-
-    rgba(0, 0, 0, 0.46)
-
-  ),url("assets/video_pgroup/intro-pgroup-ssfil\ gif.gif")no-repeat;background-size:cover;
+    background: black;
 
     background-repeat: no-repeat;
     justify-content: center;
