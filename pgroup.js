@@ -319,7 +319,7 @@ function nextSlideBg() {
 function startAutoPlayBg() {
   timeoutBg = setInterval(() => {
     nextSlideBg();
-  }, 4000);
+  }, 5500);
 }
 
 function restartAutoPlayBg() {
