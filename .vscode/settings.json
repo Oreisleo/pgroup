@@ -1,4 +1,7 @@
 {
     "liveServer.settings.port": 5501,
-    "editor.codeLensFontFamily": "Nova Cut Cursive",   
+    "editor.codeLensFontFamily": "Nova Cut Cursive",
+    "php.validate.executablePath": "",
+    "editor.wordWrap": "on",
+    
 }
