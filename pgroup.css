@@ -70,7 +70,7 @@ html {
     padding: 0px 0px 0px 0px;
     text-decoration: none;
     list-style: none;
-  /*  box-shadow: 0 0 0 1px red inset;*/
+   /*box-shadow: 0 0 0 1px red inset;*/
 }
 
 #container1 {
@@ -355,7 +355,7 @@ marquee q:nth-child(4) {
     max-width: 30%;
     height: 35em;
     overflow: hidden;
-    background-image: url(./assets/background_pgroup/bg_prism_pgroup.jpeg);
+    background-image: url(./assets/image_pgroup/carousselbg_pgroup_img/img_1920_bg_crsl/1024_prism_pgroup.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -443,10 +443,11 @@ marquee q:nth-child(4) {
     border-radius: 60% / 10%;
     transform: translateY(5%);
     transition: .8s ease-in-out;
-    background-image: url(./assets/background_pgroup/bg_register_pgroup2.jpg);
+    background-image: url(./assets/image_pgroup/carousselbg_pgroup_img/img_1920_bg_crsl/1024_bg_register_pgroup.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 
 
@@ -742,6 +743,7 @@ main{
     width: 100vw;
     display: flex;
     flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.219);
 
 }
 
@@ -791,7 +793,6 @@ main{
     height: 100%;
     overflow: hidden;
     z-index: -1;  
-   
   }
   
 
@@ -802,17 +803,15 @@ main{
     left: 0;
     width: 100vw;
     height: 100%;
-    
-    
+
   }
 
   .slide_bg img {
     width: 100%;
     height: 100%;
     object-fit: cover; 
-    
   }
-  
+
   .active_bg {
     display: block;
     
@@ -831,7 +830,7 @@ main{
     right: 50%;    
     transform: translateX(-50%);
     padding: 0 0 0 90%;
-    z-index: 2;
+    z-index: 10;
   }
   
   .dot_bg {
@@ -947,7 +946,7 @@ main{
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
-    background-image: url(./assets/background_pgroup/bg_1_small.png);
+    background-image: url(./assets/image_pgroup/carousselbg_pgroup_img/img_1920_bg_crsl/1024_bg_service_pgroup.webp);
                background-color: #fefde1;
                box-shadow:  25px 25px 30px #000000b5,
              -25px 0px 30px #090909b6;
@@ -1071,13 +1070,13 @@ main{
 
 .parallax-effect-2 {
     box-sizing: border-box;
-    background-image: url(./assets/image_pgroup/image_pgroup_girl\ 2.jpeg);
-    min-height: 400px;
-    height: 600px;
+    background-image: url(./assets/image_pgroup/carousselbg_pgroup_img/img_1920_bg_crsl/1024_girl_camera_pgroup.webp);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 400px;
+    height: 600px; 
     width: 100vw;
     display: grid;
     grid-area: 4 / 1 / 6 / 13;
@@ -1112,7 +1111,6 @@ main{
      align-items: center;
      margin: 0;
      padding: 0 1em 0 2em;
-
 }
 
 .avis-title {
@@ -1127,7 +1125,6 @@ main{
     font-size: 2.5em;
     top: 0;
     letter-spacing: 10;
-
 }
 
 
@@ -1184,14 +1181,12 @@ main{
     
   }
 
-
-
   .indicator_avis {
     position: absolute;
     bottom: 7.5em;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 5;
+    z-index: 10;
   }
   
   .dot_avis {
@@ -1249,8 +1244,7 @@ main{
      padding: 0;
      top: 0;
      bottom: 0;
-
-        
+   
 }
 
 
@@ -1290,12 +1284,11 @@ main{
     align-items: center;
     padding:0;
     bottom: 0;
-    margin-top: 2em;
+    margin-top: 0;
     transition: transform 2s ease; 
     overflow: hidden; 
     position: relative; 
     cursor: pointer;
-
 }
 
 
@@ -1326,6 +1319,7 @@ main{
     flex-wrap: wrap;
     padding: 3%;
     border-radius: 50%;
+    object-fit: cover;
     
 }
 
@@ -1380,7 +1374,7 @@ main{
     grid-row-gap: 0px;
     width: 100vw;
     height: 800px;
-    background-image: url(./assets/background_pgroup/bg_marbre.jpg);
+    background-image: url(./assets/image_pgroup/carousselbg_pgroup_img/img_1920_bg_crsl/1024_bg_marbre_pgroup.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1441,7 +1435,7 @@ main{
     width: 80vw;
     height: 85vh;
     max-height: 100%;
-    padding: 0 0 2em 0;   
+    padding: 2em 0 2em 0;   
     margin: 2em 0 0 2em;
     
 }
@@ -1458,6 +1452,7 @@ main{
     background-repeat: no-repeat;
     cursor: pointer;
     transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+   
 
 }
 
@@ -1598,12 +1593,12 @@ footer {
     flex-wrap: wrap;
     width: 100vw;
     height: 42em;
-    background-image: url(./assets/background_pgroup/bg_1_small.png);
+    background-image: url(./assets/image_pgroup/carousselbg_pgroup_img/img_1920_bg_crsl/1024_bg_service_pgroup.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow:  10px 30px 40px #3c3c3c,
-                 10px 30px 40px #000000d9;
+    box-shadow:  10px 30px 40px #000000cc,
+                 10px 30px 40px #0000009a;
 
 }
 
@@ -1612,11 +1607,11 @@ footer {
     color: rgb(144, 144, 144);
     font-style: bolder;
     width: 4%;
-    height: 90%;
+    height: 100%;
     position: absolute;
-    left: 0.8em;
-    margin: 1em 0 0 0;
-    padding: 1em 0 0 0;
+    left: 1.5em;
+    margin: 1em 0 1em 0;
+    padding: 1em 0 1em 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1645,10 +1640,7 @@ footer {
     padding: 7% 0 0 0;
     z-index: 5;
     margin: 0 15em 0 0;
-    background-image: url(./assets/background_pgroup/bg_1_small.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+
 }
 
 #reserve{
@@ -1823,7 +1815,7 @@ footer {
     cursor: pointer;
     transform: translateX(-83px);
     transition: background 300ms ease, border 300ms ease;  
-    
+    z-index: 10;
   }
 
   
@@ -1909,7 +1901,7 @@ footer {
 
   .bloc_eve{
     box-sizing: border-box;
-    background-image: url(./assets.test/bg_1_small.png);
+    background-image: url(./assets/image_pgroup/carousselbg_pgroup_img/img_1920_bg_crsl/1024_bg_service_pgroup.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;   
@@ -1960,7 +1952,7 @@ footer {
 
 .form-bloc_eve{
     position: absolute;
-    background-image: url(./assets/background_pgroup/bg_1_small.png);
+    background-image: url(./assets/image_pgroup/carousselbg_pgroup_img/img_1920_bg_crsl/1024_bg_service_pgroup.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2026,7 +2018,7 @@ footer {
 
 .toggle-side{
     box-sizing: border-box;
-    background-image: url(./assets/background_pgroup/bg_prism_pgroup.jpeg);
+    background-image: url(./assets/image_pgroup/carousselbg_pgroup_img/img_1920_bg_crsl/1024_prism_pgroup.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2252,8 +2244,10 @@ footer {
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    background-image: url(./assets/background_pgroup/bg_prism_pgroup.jpeg);
+    background-image: url(./assets/image_pgroup/carousselbg_pgroup_img/img_1920_bg_crsl/1024_prism_pgroup.webp);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 
@@ -2303,7 +2297,7 @@ footer {
     flex-direction: row;
     width: 100vw;
     height: auto;
-    background: url("assets/background_pgroup/bg_marbre.jpg")no-repeat; 
+    background: url("./assets/image_pgroup/carousselbg_pgroup_img/img_1920_bg_crsl/1024_bg_marbre_pgroup.webp")no-repeat; 
     background-size:cover;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     padding: 0 6% 0 6%;

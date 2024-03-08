@@ -64,7 +64,7 @@ body {
 
     #navbar{
         margin: 0;
-        padding: 10px 25px 0 25px;
+        padding: 20px 25px 0 25px;
         color: white;
         width: 100vw;
         height: 60px;
@@ -303,7 +303,7 @@ body {
     border-radius: 60% / 10%;
     transform: translateY(5%);
     transition: .8s ease-in-out;
-    background-image: url(./assets/background_pgroup/bg_register_pgroup2.jpg);
+    background-image: url(./assets/image_pgroup/carousselbg_pgroup_img/img_1920_bg_crsl/1024_bg_register_pgroup.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -378,10 +378,10 @@ body {
     #text-parallax {
         display: flex;
         justify-content: center;
-        width: 80%;
+        width: 85%;
         height: 35%;
         font-size: 1.8em;
-        padding: 3% 2% 3% 5%; 
+        padding: 3% 2% 3% 9%; 
         margin: 80% 0 0 5%;
         background-color: hsla(0, 0%, 0%, 0.477);
         box-shadow:  25px 25px 30px #00000097,
@@ -393,8 +393,7 @@ body {
         flex-direction: row;
         width: 50%;
         bottom: 8%;
-        left: 48%;
-        right: 40%;
+        left: 50%;
         padding: 0;
         margin: 0;
       }
@@ -406,7 +405,7 @@ body {
       }
 
       .parallax-effect {
-        height: 875px;
+        height: 100vh;
         width: 100vw;
         margin-top: 0;
         padding: 0 0 0 2em;
@@ -414,6 +413,11 @@ body {
 
     .parallax-effect-2 {
         box-sizing: border-box;
+        background-image: url(./assets/image_pgroup/carousselbg_pgroup_img/img_320_bg_crsl/320_girl_camera_pgroup.webp);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         height: 900px;
         width: 100vw;
         display: grid;
@@ -423,7 +427,7 @@ body {
 
     #service-space {
         box-sizing: border-box;
-        margin: 0 0 8em 0;
+        margin: 0 0 15em 0;
     }
 
     #titre-service {
@@ -486,10 +490,10 @@ body {
         justify-content: flex-start;
          min-width: 250px;
          width: 100vw;
-         height: 50%;
+         height: 60%;
          margin: 0;
          top: 0;
-         padding: 10% 0 0 0;
+         padding: 5% 0 0 0;
 
     }
 
@@ -498,7 +502,7 @@ body {
         width: 100vw;
         color: white;
         font-size: x-large;
-        padding: 1em 1em 3em 1em;
+        padding: 1em 1em 2em 1em;
 
     }
 
@@ -513,10 +517,10 @@ body {
     }
       /* Slides */
       .caroussel-avis {
-        margin: 25% 0 0 5%;
+        margin: 10% 0 0 5%;
         height: 20em;
         padding: 0 1.1em 0 1.1em;
-        font-size: 1em;
+        font-size: 1.1em;
         background-color: #00000082;
         box-shadow:  35px 25px 50px #000000d9,
                 -35px 20px 40px #090909ee;
@@ -526,9 +530,9 @@ body {
       .slide_avis {
         display: flex;
         position: relative;
-        text-align: justify;    
+        text-align: justify;
         width: 100%;
-        height: 100%;    
+        height: 100%;
         line-height: 2;
         padding: 2em 0 0 0;
        
@@ -547,15 +551,14 @@ body {
       .indicator_avis {
         position: absolute;
         margin: 0;
-        top: 21.5em;
+        top: 22em;
         bottom: 0;
-        
-
+        z-index: 5;
       }
 
       .dot_avis {
-        height: 0.6em;
-        width: 0.6em;
+        height: 0.75em;
+        width: 0.75em;
         background-color: white;
         border-radius: 50%;
         display: inline-block;
@@ -598,10 +601,10 @@ body {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        padding: 5.5em 0 0 0;
+        padding: 1em 0 0 0;
         min-width: 250px;
         width: 100vw;
-        height: 50%;
+        height: 40%;
     }
 
 
@@ -618,9 +621,6 @@ body {
         justify-content: center;
         align-items:center ;
         box-shadow: none;
-
-
-
     }
 
     .confiance-title p {
@@ -629,7 +629,6 @@ body {
         align-items: center;
         text-align: center;
         color: white;
-        
     }
 
     /* ...........DEBUT CAROUSSEL CONFIANCE ........*/
@@ -651,8 +650,8 @@ body {
     }
 
     .partenaire img {
-        width: 5em;
-        height: 5em;
+        width: 7em;
+        height: 7em;
         display: flex;
         justify-content: space-around;
         border-spacing: 10rem;
@@ -662,8 +661,13 @@ body {
     }
 
     #realisation-container {
-        margin-bottom: 20em;
-        padding: 4em 0 5em 0;
+        margin: 0;
+        padding: 4em 0 6em 0;
+        height: 900px;
+        background-image: url(./assets/image_pgroup/carousselbg_pgroup_img/img_320_bg_crsl/320_bg_marbre_pgroup.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
      }
 
     #titre-realisation {
@@ -672,9 +676,9 @@ body {
         height: 100%;
         position: absolute;
         left: 0.8em;
-        margin: 0 0 34.6em 0;
+        margin: 0 0 38em 0;
         font-size: 1.5em;
-        letter-spacing: 1.2em;
+        letter-spacing: 1em;
         z-index: 3;
      
     }
@@ -755,32 +759,32 @@ body {
     .work:not(.active):nth-child(1) {
         width: 80%;
         top: 0;
-        height: 110px;
+        height: 90px;
         
     }
     
     .work:not(.active):nth-child(2) {
         width: 30%;
         top: 0;
-        height: 110px;
+        height: 90px;
     }
     
     .work:not(.active):nth-child(3) {
         width: 50%;
         top: 0;
-        height: 110px;
+        height: 90px;
     }
     
     .work:not(.active):nth-child(4) {
         width: 70%;
         top: 0;
-        height: 110px;
+        height: 90px;
     }
     
     .work:not(.active):nth-child(5) {
         width: 80%;
         top: 0;
-        height: 110px;
+        height: 90px;
         
     }
 
@@ -793,19 +797,25 @@ body {
     .work:not(.active):nth-child(7) {
         width: 45%;
         top: 0;
-        height: 110px;
+        height: 90px;
     }
     
     .work:not(.active):nth-child(8) {
         width: 30%;
         top: 0;
-        height: 110px;
+        height: 90px;
     }
 
     .work:not(.active):nth-child(9) {
         width: 60%;
         top: 0;
-        height: 110px;
+        height: 90px;
+    }
+
+    .work:not(.active):nth-child(10) {
+        width: 40%;
+        top: 0;
+        height: 90px;
     }
 
     .work:not(.active) .icon_space {
@@ -830,20 +840,24 @@ body {
 #evenement-container {
     display: flex;
     flex-direction: column;
-    height: 600px;
+    height: 700px;
     width: 100vw;
     flex-wrap: wrap;
 }
 
 #titre-evenement {
-    width: 4%;
-    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
     position: absolute;
-    left: 0.9em;
+    left: 3px;
     margin: 0;
-    padding: 5em 0 0 0;
-    font-size: 1.1em;
+    padding: 0;
+    font-size: 90%;
     letter-spacing: 0.5em;
+
 }
 
 
@@ -869,7 +883,7 @@ body {
 
   #slider-eve input[type=radio] {
     position: relative;
-    top: 25.5em;
+    top: 30.5em;
     left: 8.7em;
     width: 8%;  
     height: 8%; 
@@ -886,8 +900,9 @@ body {
 }
 
 #reserve {
-    padding: 0 0 0 1.5em;
-    z-index: 10;
+    margin: 20px 0.2em 0 0;
+    padding: 0;
+    z-index: 5;
 }
 
 #reserve p {
@@ -897,10 +912,10 @@ body {
 .btn_reserve {
     box-sizing: border-box;
     width: 7em;
-    height: 2.5em;
-    margin: 1.5em 1.6em 0.8em 0;
+    height: 2em;
+    margin: 0;
     padding: 2% 3% 2% 3%;
-    font-size: 1em;
+    font-size: 1.2em;
     
 }
 
@@ -1064,7 +1079,7 @@ body {
     padding: 20% 0 0 0;
     bottom: 0;
     align-items: center;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 #text_none_reserve {
@@ -1078,7 +1093,7 @@ body {
     padding: 20% 0 0 0;
     bottom: 0;
     align-items: center;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .toggle-side h2 {
@@ -1239,7 +1254,10 @@ body {
     margin: 0;
     padding: 5px ;
     font-size: 1em;
-    background-image: url(./assets/background_pgroup/bg_prism_pgroup.jpeg);
+    background-image: url(./assets/image_pgroup/carousselbg_pgroup_img/img_1920_bg_crsl/1024_prism_pgroup.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     
 }
 
@@ -1325,6 +1343,7 @@ body {
     color: white;
     font-size: 90%;
     padding: 4em 0 5em 0;
+    background-color: #00000072;
     box-shadow:  -10px 10px 20px #000000c9,
                   10px 10px 20px #000000cb;
    
@@ -1353,6 +1372,13 @@ body {
 }
 
 /*.........................FORMULAIRE DE CONATCT ........................*/
+
+#contact-container {
+    background-image: url(./assets/image_pgroup/carousselbg_pgroup_img/img_320_bg_crsl/320_bg_marbre_pgroup.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 
 #contact-map {

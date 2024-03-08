@@ -550,20 +550,6 @@ window.addEventListener("scroll", closePopup);
 
 // ---------------------------------------------   fin popup reseve   --------------------------------------//
 
-// ---------------------- DEBUT  CAROUSSEL CONFIANCE  ------------------------//
-
-let sequenceElement = document.getElementById("sequence");
-
-let options = {
-  keyNavigation: true,
-  animateCanvas: false,
-  phaseThreshold: false,
-  reverseWhenNavigatingBackwards: true,
-};
-
-let mySequence = sequence(sequenceElement, options);
-
-// ----------------------------------------- FIN CAROUSSEL CONFIANCE  -----------------------//
 
 // --------------------- RESPONSIVE  DEBUT CAROUSSEL REALISATION  --------------  //_
 
@@ -580,3 +566,5 @@ works.forEach((work) => {
 });
 
 //  --------------------  RESPONSIVE FIN CAROUSSEL REALISATION   ----------------//
+
+
