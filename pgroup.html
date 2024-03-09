@@ -722,7 +722,7 @@
           <h3>Pour tous besoins d'informations complémentaires</h3>
           <h2>
             <span>TARIFS :</span>Veuillez remplir le formulaire ci-dessous pour avoir nos tarifs.</h2>
-          <form id="formulaire">
+          <form id="formulaire" action="/contact" method="post">
             <div class="field">
               <label for="name">Nom :</label>
               <input type="text" id="name_contact" name="firstname" placeholder="Votre nom " required>
@@ -754,7 +754,7 @@
               </select>
             </div>
             <div id="div_butonform">
-              <button id="submit-btn">Envoyer</button>
+              <button id="submit-btn" type="submit">Envoyer</button>
             </div>
           </form>
         </div>
