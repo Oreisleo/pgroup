@@ -937,6 +937,7 @@ main{
     grid-area: 1 / 1 / 4 / 13;
     padding: 0 0 0 0;
     margin: 0 0 30% 0;
+    border-radius: 100px 100px 50px 50px;
     z-index: 2;
     width: 100vw;
     height: auto;

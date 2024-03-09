@@ -1,4 +1,28 @@
 {
-  "rewrites": [{"source": "/(.*)", "destination": "/pgroup.html"}
+  "rewrites": [
+    {"source": "/(.*)", "destination": "/pgroup.html"}
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400" 
+        },
+        {
+          "key": "Expires",
+          "value": "max-age=86400" 
+        },
+        {
+          "key": "ETag",
+          "value": "W/\"123456789\"" 
+        },
+        {
+          "key": "Vary",
+          "value": "Accept-Encoding" 
+        }
+      ]
+    }
   ]
 }

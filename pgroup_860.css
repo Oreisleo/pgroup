@@ -3,9 +3,9 @@ body {
    
 }
 
-/*  ----------------  Screen < 768px x 1024 responsive   -----------*/
+/*  ----------------  Screen < 860px x 1200 responsive   -----------*/
 
-@media only screen and (min-width: 461px) and (max-width: 769px) {
+@media only screen and (min-width: 800px) and (max-width: 900px) {
 
     #header {
         display: flex;
@@ -153,7 +153,7 @@ body {
     
     #dropdown_navbar  {
         display: block;
-        border-radius: 10px 10px 350px 350px;
+        border-radius: 10px 10px 370px 370px;
        
     }
 
@@ -188,7 +188,7 @@ body {
     .dropdown_link li.active a {
         color: #eeca66; 
         line-height: 15px;
-        border-bottom: 3px solid #eeca66; 
+        border-bottom: 3px solid #eeca66;
         padding-bottom: 3px; 
         display: inline-block; 
         scale: 1.01;
@@ -251,12 +251,12 @@ body {
 }
 
 
-  
+ 
 #chk {
     display: none;
 }
 
-
+  
 .login {
     position: relative;
     width: 100%;
@@ -308,7 +308,7 @@ body {
     margin: 0 0 0 4%;
 }
 
-  /*Register*/
+  
 .register {
     box-sizing: border-box;
     border-radius: 60% / 10%;
@@ -397,7 +397,7 @@ body {
         height: 35%;
         font-size: 2.5em;
         padding: 3% 2% 3% 6%; 
-        margin: 50% 0 0 17%;
+        margin: 50% 0 0 16%;
         background-color: hsla(0, 0%, 0%, 0.477);
         box-shadow:  25px 25px 30px #00000097,
                     -25px 0px 30px #000000ae;
@@ -489,6 +489,8 @@ body {
     /*................... AVIS - PARRALAX 2 ......................*/
 
     #avis-confiance {
+        box-sizing: border-box;
+        display: flex;
         top: 0;
         flex-wrap: wrap;
         flex-direction: row;
@@ -509,6 +511,7 @@ body {
          margin: 0;
          top: 0;
          padding: 5% 0 2% 0;
+        
     }
 
     .avis-title {
@@ -521,16 +524,16 @@ body {
 
     /*............. DEBUT CAROUSSEL AVIS RESP ........*/
 
-  
+    /* Slideshow container */
     .slideshow-container {
         width: 100vw;
         height: 55%;
         padding: 0 10% 0 10%;
     }
 
-   
+      /* Slides */
       .caroussel-avis {
-        margin: 5% 0 8% 5%;
+        margin: 5% 0 10% 5%;
         height: 20em;
         padding: 0 1.2em 0 1.2em;
         font-size: 1.5em;
@@ -567,11 +570,13 @@ body {
         top: 22em;
         bottom: 0;
         z-index: 5;
+        
+
       }
 
       .dot_avis {
-        height: 0.9em;
-        width: 0.9em;
+        height: 1em;
+        width: 1em;
         background-color: white;
         border-radius: 50%;
         display: inline-block;
@@ -579,6 +584,8 @@ body {
         cursor: pointer;
         border-style: 4px double;
         border-color: #f4b762;
+        z-index: 5;
+      
       }
 
       .dot_avis.active {
@@ -597,7 +604,7 @@ body {
          color: white;
      }
     
-      
+      /* Add a blue color to the author */
       .author {
             color:#eeca66;
             font-size: large;
@@ -659,10 +666,10 @@ body {
         flex-direction:row;
         justify-content: space-around;
         align-items: center;
-        padding: 0;
+        padding: 0 0 2em 0;
         transition: transform 2s ease; 
         overflow: hidden; 
-        position: relative;  
+        position: relative; 
     }
 
     .partenaire img {
@@ -692,7 +699,7 @@ body {
         height: 100%;
         position: absolute;
         left: 0.8em;
-        margin: 0 0 39.5em 0;
+        margin: 0 0 39em 0;
         font-size: 2em;
         letter-spacing: 1.2em;
         z-index: 3;
@@ -760,6 +767,7 @@ body {
         margin: 0;
         padding: 0;
         bottom: 0;
+        gap: 3px;
         border: 1px solid rgb(114, 114, 114);
         background-position: center;
         background-size: cover;
@@ -880,15 +888,17 @@ body {
     flex-wrap: wrap;
     width: 100vw;
     height: 100%;
+
 }
 
 #sous-bloc-eve {
     padding: 1% 0 0 0;
+   
 }
 
-/*---zoom slider evenement -----*/
+
 .zoom-container:hover img {
-    transform: scale(1.45); /* Zoom level */
+    transform: scale(1.45); 
     transition: transform .5s ease-in-out;
   }
 
@@ -896,12 +906,12 @@ body {
     position: relative;
     top: 44em;
     left: 14em;
-    width: 6%;  /* Slightly larger */
-    height: 6%;  /* Slightly larger */
+    width: 6%;  
+    height: 6%; 
     margin: 0 5% 0 0;
-    background: transparent;  /* Light gray */
+    background: transparent;  
     border: 2px solid black;
-    border-style: double;  /* Light gray */
+    border-style: double;  
 
   }
 
@@ -928,7 +938,6 @@ body {
     margin: 0;
     padding: 2% 3% 2% 3%;
     font-size: 2em;
-    
 }
 
 
@@ -1092,7 +1101,6 @@ body {
     bottom: 0;
     align-items: center;
     font-size: 1.5em;
-    
 }
 
 #text_none_reserve {
@@ -1107,6 +1115,7 @@ body {
     bottom: 0;
     align-items: center;
     font-size: 1.5em;
+    
 }
 
 .toggle-side h2 {
@@ -1215,7 +1224,7 @@ body {
     text-align: start;
   } 
 
-  /* Ajout du style pour l'icône de modification */
+
 .delete-icon {
     height: 30px;
     width: 30px;
@@ -1225,7 +1234,7 @@ body {
     
   }
   
-  
+ 
   .file-uploaded .delete-icon {
     display: inline;
   }
@@ -1693,14 +1702,15 @@ body {
 #popup_reserve {
     top: 50%;
     max-width: 75%;
-    padding: 10% 5% 10% 5%;
+    padding: 10% 3% 10% 3%;
     border: 1px solid #eeca66;
     border-radius: 2em 2em 2em 2em;
+    line-height: 1;
     z-index: 400;
   }
 
   #popup_reserve h1 {
-    font-size: 2em;
+    font-size: 2.2em;
   }
 
   #popup_reserve p {
@@ -1708,7 +1718,7 @@ body {
     flex-direction: column;
     width: 100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.3em;
+    font-size: 1.2em;
     display: inline-block;
   }
 
@@ -1729,7 +1739,7 @@ body {
   
 }
 
-
+/* Ajoutez cette animation pour le mouvement de haut en bas */
 @keyframes move-top-bottom {
     0% {
         transform: translateY(-100%);

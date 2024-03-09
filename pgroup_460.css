@@ -3,28 +3,23 @@ body {
    
 }
 
-/*  ----------------  Screen < 768px x 1024 responsive   -----------*/
+/*  ----------------  Screen < 461px x 926 responsive   -----------*/
 
-@media only screen and (min-width: 461px) and (max-width: 769px) {
+@media only screen and (min-width: 416px) and (max-width: 461px) {
 
     #header {
         display: flex;
         flex-direction: column;
         width: 100vw;
-        height: 10em;
+        height: 6.5em;
         background-color: transparent;
+     
     }
 
     
     .banderole {
         padding: 1% 0 1% 0;
-        height: 2em;
     }
-
-    marquee q {
-        margin: 0 2em 0 2em;
-        font-size: 1.5em;
-     }
 
      #popup_logo {
         display: flex;
@@ -53,8 +48,8 @@ body {
         justify-content: center;
         align-items: center;
         position: absolute;
-        width: 1.8em;
-        height: 1.8em;
+        width: 1.5em;
+        height: 1.5em;
         top: 1.5em;
         right: 1.5em;
         text-align: center;
@@ -69,12 +64,12 @@ body {
 
     #navbar{
         margin: 0;
-        padding: 20px 40px 10px 40px;
+        padding: 20px 25px 0 25px;
         color: white;
         width: 100vw;
-        height: 110px;
+        height: 60px;
         z-index: 100;
-
+        
     }
 
     .navbar_link {
@@ -98,8 +93,8 @@ body {
         box-sizing: border-box;
         display: flex;
         cursor: pointer;
-        height: 6em;
-        width: 6em;
+        height: 4em;
+        width: 4em;
         margin: 0;
         border-radius: 50%;
         border: 4px solid white;
@@ -110,7 +105,7 @@ body {
     
     #logo:hover {
         transform: scale(1.2); 
-    }
+      }
 
 
     .toggle_menu {
@@ -143,7 +138,7 @@ body {
     .fa-bars {
         box-sizing: border-box;
         font-weight: lighter;
-        font-size: 1.3em;
+        font-size: 0.9em;
     }
     
     .toggle_menu i:hover {
@@ -153,13 +148,12 @@ body {
     
     #dropdown_navbar  {
         display: block;
-        border-radius: 10px 10px 350px 350px;
        
     }
 
     #dropdown_navbar.open {
-        height: 45em;
-        padding: 8em 0 3em 0;
+        height: 27em;
+        padding: 2.5em 0 4em 0;
         transition: all 0.8s ease-in-out;
         
     }
@@ -171,7 +165,7 @@ body {
     }
     
     #dropdown_navbar li {
-        padding: 0.8em;
+        padding: 0.4em;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -180,7 +174,7 @@ body {
     
     .dropdown_link a {
         color: white;
-        font-size: 2em;
+        font-size: 1.3em;
         font-family: 'Poppins';
     }
     
@@ -199,8 +193,8 @@ body {
     position: absolute;    
     left: 45%;
     right: 45%;
-    width: 5em;
-    height: 5em;
+    width: 2.5em;
+    height: 2.5em;
     cursor: pointer;
     margin: 4% 0 0 0 ;
     z-index: 250;
@@ -226,17 +220,17 @@ body {
         position: absolute;
         display: flex;
         flex-direction: column;
-        margin: 0 10% 0 16%;
+        margin: 0 5% 0 10%;
         top: 25%;
         left: 0;
         right: 0;
-        max-width: 65vw;
-        height: 600px;
+        max-width: 80vw;
+        height: 410px;
     }
 
     .form_login {
         display: flex;
-        width: 100%;
+        width: 68vw;
         flex-direction: column;
         gap: 5px;
         padding: 0 5% 0 5%;
@@ -244,36 +238,31 @@ body {
     
 .form_register {
     display: flex;
-    width: 100%;
+    width: 68vw;
     flex-direction: column;
     gap: 5px;
-    padding: 5% 7% 0 0;
+    padding: 5% 5% 0 5%;
+
 }
 
 
-  
+ 
 #chk {
     display: none;
 }
 
-
+ 
 .login {
     position: relative;
     width: 100%;
     height: 100%;
-    padding:  0;
-    margin: 0;
-
+    
 }
 
 .login label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 25% 5% 15% 5%;
-    padding: 0 ;
-    font-size: 1.8em;
-    width: 80%;
+    margin: 25% 0 15% ;
+    padding: 0;
+    font-size: 1.3em;
 }
 
 .login label.active {
@@ -282,8 +271,8 @@ body {
 
 .register label {
     top: 0;
-    margin: 0 0 25% 0;
-    font-size: 1.8em;
+    margin: 5% 0 20% 0;
+    font-size: 1.3em;
     font-weight: bold;
     color: #eeca66;
     letter-spacing: 1px;
@@ -294,18 +283,18 @@ body {
     transition: .5s ease-in-out;
     color: #000000;
     transform: scale(.7);
+   
 
  }
 
 .input_login {
-    width: 80%;
+    width: 100%;
     height: 15px;
     background: #ffffff;
     padding: 10px;
     border: none;
     outline: none;
     border-radius: 4px;
-    margin: 0 0 0 4%;
 }
 
   /*Register*/
@@ -318,7 +307,6 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 0 0 0 5%;
     height: 100%;
 
 }
@@ -330,29 +318,26 @@ body {
 #chk:checked ~ .register label {
     transform: scale(1);
     margin: 10% 0 15% 0;
-    padding: 0 11% 0 0;
+    
 
 }
 
 #chk:checked ~ .login label {
     transform: scale(.6);
-    margin: 10% 0 15% 5%;
+    margin: 10% 0 10%;
     color: white;
+    
 }  
 
   /*Button*/
 #btn_login,
 #btn_register {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 50%;
-    height: 45px;
-    margin: 8% 0  20% 20%;
+    height: 40px;
+    margin: 8% 0  17% 28%;
     color: #fff;
-    background: #000000;
-    font-size: 1.5em;
+    background: #071114;
+    font-size: 1rem;
     font-weight: bold;
     border: none;
     border-radius: 4px;
@@ -367,10 +352,10 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 1.5em;
-    height: 1.5em;
-    top: 1.3em;
-    right: 1.3em;
+    width: 1em;
+    height: 1em;
+    top: 1em;
+    right: 1em;
     font-size: 1.1em;
 
 }
@@ -393,11 +378,11 @@ body {
     #text-parallax {
         display: flex;
         justify-content: center;
-        width: 60%;
+        width: 85%;
         height: 35%;
-        font-size: 2.5em;
-        padding: 3% 2% 3% 6%; 
-        margin: 50% 0 0 17%;
+        font-size: 1.8em;
+        padding: 3% 2% 3% 9%; 
+        margin: 80% 0 0 5%;
         background-color: hsla(0, 0%, 0%, 0.477);
         box-shadow:  25px 25px 30px #00000097,
                     -25px 0px 30px #000000ae;
@@ -414,8 +399,8 @@ body {
       }
 
       .dot_bg {
-        height: 1em;
-        width: 1em;
+        height: 0.7em;
+        width: 0.7em;
         margin: 0%;
       }
 
@@ -433,7 +418,7 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 1000px;
+        height: 900px;
         width: 100vw;
         display: grid;
         display: flex;
@@ -447,24 +432,24 @@ body {
 
     #titre-service {
         padding: 1em 0 0.5em 0;
-        font-size: 1em;
+        font-size: 0.7em;
     }
 
     #bloc-service-1 {
         width: 100vw;
-        padding: 1em 2em 0 2em;
+        padding: 1em 1.5em 0 1.5em;
         flex-wrap: wrap;
     }
 
     .type-service-1 {
-        width: 8em;
+        width: 11em;
         margin: 0 0 20% 0;
         padding: 0.4em 0 1em 0;
     }
 
     .image-service {
        padding: 0 0 0.1em 0;;
-       width: 1.7em;
+       width: 1.6em;
     }
 
     .subheader-service {
@@ -481,7 +466,7 @@ body {
     }
 
     .textcontent-service {
-        font-size: 14px;
+        font-size: 13.5px;
         padding: 0.5em 1.5em 0 1.5em;
         text-align: justify;
     }
@@ -493,7 +478,7 @@ body {
         flex-wrap: wrap;
         flex-direction: row;
         width: 100vw;
-        height: 1000px;
+        height: 900px;
         padding: 0;
         background: linear-gradient(
             rgba(248, 247, 247, 0.104),rgba(0, 0, 0, 0.268),rgba(0, 0, 0, 0.345), 
@@ -508,32 +493,34 @@ body {
          height: 60%;
          margin: 0;
          top: 0;
-         padding: 5% 0 2% 0;
+         padding: 5% 0 0 0;
+
     }
 
     .avis-title {
         box-sizing: border-box;
         width: 100vw;
         color: white;
-        font-size: 2em;
+        font-size: x-large;
         padding: 1em 1em 2em 1em;
+
     }
 
     /*............. DEBUT CAROUSSEL AVIS RESP ........*/
 
-  
+    /* Slideshow container */
     .slideshow-container {
         width: 100vw;
         height: 55%;
-        padding: 0 10% 0 10%;
+        padding: 0 8% 0 5%;
+       
     }
-
-   
+      /* Slides */
       .caroussel-avis {
-        margin: 5% 0 8% 5%;
+        margin: 10% 0 0 5%;
         height: 20em;
-        padding: 0 1.2em 0 1.2em;
-        font-size: 1.5em;
+        padding: 0 1.1em 0 1.1em;
+        font-size: 1.1em;
         background-color: #00000082;
         box-shadow:  35px 25px 50px #000000d9,
                 -35px 20px 40px #090909ee;
@@ -543,12 +530,13 @@ body {
       .slide_avis {
         display: flex;
         position: relative;
-        text-align: justify;    
+        text-align: justify;
         width: 100%;
-        height: 100%;    
+        height: 100%;
         line-height: 2;
         padding: 2em 0 0 0;
-}
+       
+      }
     
       .slide_avis p {
         box-sizing: border-box;
@@ -558,7 +546,6 @@ body {
         color: #eeca66;
         text-align: justify;
         line-height: 1.5;
-        font-size: 1.2em;
     }
 
       .indicator_avis {
@@ -570,8 +557,8 @@ body {
       }
 
       .dot_avis {
-        height: 0.9em;
-        width: 0.9em;
+        height: 0.75em;
+        width: 0.75em;
         background-color: white;
         border-radius: 50%;
         display: inline-block;
@@ -579,6 +566,7 @@ body {
         cursor: pointer;
         border-style: 4px double;
         border-color: #f4b762;
+        z-index: 3;
       }
 
       .dot_avis.active {
@@ -597,7 +585,7 @@ body {
          color: white;
      }
     
-      
+      /* Add a blue color to the author */
       .author {
             color:#eeca66;
             font-size: large;
@@ -614,29 +602,26 @@ body {
         justify-content: flex-start;
         align-items: center;
         padding: 1em 0 0 0;
-        margin: 8% 0 0 0;
         min-width: 250px;
         width: 100vw;
         height: 40%;
-       
     }
 
 
     .confiance-title {
         box-sizing: border-box;
         color: white;
-        padding: 0 1em 0 4em;
-        margin: 0 0 2em 0;
+        padding: 0 1em 0 1.6em;
+        margin: 0 0 4em 0;
         width: 100%;
         font-family: 'Nova Cut', cursive;
         font-weight: bolder;
-        font-size: 2em;
+        font-size: x-large;
         display: flex;
         justify-content: center;
         align-items:center ;
         box-shadow: none;
-
- }
+    }
 
     .confiance-title p {
         display: flex;
@@ -644,7 +629,6 @@ body {
         align-items: center;
         text-align: center;
         color: white;
-        
     }
 
     /* ...........DEBUT CAROUSSEL CONFIANCE ........*/
@@ -660,14 +644,14 @@ body {
         justify-content: space-around;
         align-items: center;
         padding: 0;
-        transition: transform 2s ease; 
+        transition: transform 2s ease;
         overflow: hidden; 
-        position: relative;  
+        position: relative; 
     }
 
     .partenaire img {
-        width: 8em;
-        height: 8em;
+        width: 7em;
+        height: 7em;
         display: flex;
         justify-content: space-around;
         border-spacing: 10rem;
@@ -678,8 +662,8 @@ body {
 
     #realisation-container {
         margin: 0;
-        padding: 2em 0 8em 0;
-        height: 1300px;
+        padding: 4em 0 6em 0;
+        height: 900px;
         background-image: url(./assets/image_pgroup/carousselbg_pgroup_img/img_320_bg_crsl/320_bg_marbre_pgroup.webp);
         background-size: cover;
         background-position: center;
@@ -692,9 +676,9 @@ body {
         height: 100%;
         position: absolute;
         left: 0.8em;
-        margin: 0 0 39.5em 0;
-        font-size: 2em;
-        letter-spacing: 1.2em;
+        margin: 0 0 38em 0;
+        font-size: 1.5em;
+        letter-spacing: 1em;
         z-index: 3;
      
     }
@@ -707,12 +691,12 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 5em 0 0 1.5em;
+        margin: 0 0 0 1.5em;
         padding: 0;
         overflow: hidden;
         background-position: center;
         background-size: cover;
-        width: 90%;
+        width: 100%;
         height: 100%;
         gap: 8px;
     }
@@ -722,7 +706,7 @@ body {
         justify-items: center;
         position: relative;
         overflow: hidden;
-        width: 70%;
+        width: 90%;
         height: 110px;
         margin: 0;
         padding:0; 
@@ -738,8 +722,8 @@ body {
 
     .work.active {
         transform: scale(1);
-        width: 70%;
-        height: 1100px;
+        width: 85%;
+        height: 1700px;
         margin: 0;
         padding: 0;
         top: 0;
@@ -750,11 +734,13 @@ body {
         background-repeat: no-repeat;
         background-color: transparent;
         transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+
+    
     }
 
     .work:not(.active) {
         border-radius: 20px;
-        height: 100px;
+        height: 115px;
         width: 90%;
         top: 0;
         margin: 0;
@@ -805,7 +791,7 @@ body {
     .work:not(.active):nth-child(6) {
         width: 50%;
         top: 0;
-        height: 90px;
+        height: 110px;
     }
 
     .work:not(.active):nth-child(7) {
@@ -854,7 +840,7 @@ body {
 #evenement-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 700px;
     width: 100vw;
     flex-wrap: wrap;
 }
@@ -863,14 +849,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 8%;
+    width: 10%;
     height: 100%;
     position: absolute;
-    left: 4px;
+    left: 3px;
     margin: 0;
     padding: 0;
-    font-size: 1.5em;
+    font-size: 90%;
     letter-spacing: 0.5em;
+
 }
 
 
@@ -880,29 +867,30 @@ body {
     flex-wrap: wrap;
     width: 100vw;
     height: 100%;
+
 }
 
 #sous-bloc-eve {
     padding: 1% 0 0 0;
+   
 }
 
 /*---zoom slider evenement -----*/
 .zoom-container:hover img {
-    transform: scale(1.45); /* Zoom level */
+    transform: scale(1.45); 
     transition: transform .5s ease-in-out;
   }
 
   #slider-eve input[type=radio] {
     position: relative;
-    top: 44em;
-    left: 14em;
-    width: 6%;  /* Slightly larger */
-    height: 6%;  /* Slightly larger */
+    top: 30.5em;
+    left: 8.7em;
+    width: 8%;  
+    height: 8%; 
     margin: 0 5% 0 0;
-    background: transparent;  /* Light gray */
+    background: transparent;  
     border: 2px solid black;
-    border-style: double;  /* Light gray */
-
+    border-style: double; 
   }
 
 #slider-eve {
@@ -912,7 +900,7 @@ body {
 }
 
 #reserve {
-    margin: 30px 0 0 1.2em;
+    margin: 20px 0.2em 0 0;
     padding: 0;
     z-index: 5;
 }
@@ -923,11 +911,11 @@ body {
 
 .btn_reserve {
     box-sizing: border-box;
-    width: 7.5em;
+    width: 7em;
     height: 2em;
     margin: 0;
     padding: 2% 3% 2% 3%;
-    font-size: 2em;
+    font-size: 1.2em;
     
 }
 
@@ -1063,10 +1051,10 @@ body {
 .bloc_eve #btn_publish_toggle, #btn_reserve_toggle {
     background-color:#eeca66;
     color: black;
-    font-size: 25px;
+    font-size: 14px;
     padding: 2% 5% 2% 5%;
     margin: 0 0 1em 0;
-    width: 65vw;
+    width: 77vw;
 }
 
 #text_none_eve {
@@ -1074,7 +1062,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.8em;
+    font-size: 1em;
    
 }
 
@@ -1091,8 +1079,7 @@ body {
     padding: 20% 0 0 0;
     bottom: 0;
     align-items: center;
-    font-size: 1.5em;
-    
+    font-size: 1em;
 }
 
 #text_none_reserve {
@@ -1106,7 +1093,7 @@ body {
     padding: 20% 0 0 0;
     bottom: 0;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .toggle-side h2 {
@@ -1146,7 +1133,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 1em 0.7em 0 0.7em;
-    width: 60vw;
+    width: 70vw;
     height: auto;
     margin: 0;
     left: 0;
@@ -1163,7 +1150,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0;
-    font-size: 1.5em;
+    font-size: 0.8em;
     gap: 2px;
     height: auto;
     width: 70vw;
@@ -1204,7 +1191,7 @@ body {
   #file-name {
     color: rgb(75, 75, 75);
     font-style: normal;
-    font-size: 0.9em;
+    font-size: 0.6em;
     padding: 0;
     left: 0;
     margin: 0;
@@ -1215,12 +1202,12 @@ body {
     text-align: start;
   } 
 
-  /* Ajout du style pour l'icône de modification */
+ 
 .delete-icon {
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     vertical-align:none;
-    width: 30px;
+    width: 20px;
     margin-left: 0;
     
   }
@@ -1231,8 +1218,8 @@ body {
   }
 
   .preview-icon {
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     vertical-align: none;
     margin-left: 5px;
     border-radius: 50%;
@@ -1259,24 +1246,26 @@ body {
   .btn_publish {
     box-sizing: border-box;
     color: rgb(255, 248, 248);
-    width: 8em;
-    height: 3em;
+    width: 6em;
+    height: 2.5em;
     border-radius: 5em 5em 5em 5em;
     border: 1px solid#ffedbb;
     border-width: 5px;
     margin: 0;
     padding: 5px ;
-    font-size: 1.5em;
+    font-size: 1em;
     background-image: url(./assets/image_pgroup/carousselbg_pgroup_img/img_1920_bg_crsl/1024_prism_pgroup.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
 }
 
 .btn_publish:hover {
     background-color: #8b54e4;
     border-style: double;
 }
+
 
 #item_btn_publish {
     box-sizing: border-box;
@@ -1285,12 +1274,12 @@ body {
     justify-content: center;
     align-items: center;
     width: 80vw;
-    gap: 0.5em;
+    gap: 0.4em;
     margin: 0;
 }
 
 #item_btn_publish p {
-    font-size: 1.2em;
+    font-size: 0.7em;
     color: black;
     font-family: 'Poppins';
 }
@@ -1346,13 +1335,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80vw;
+    width: 90vw;
     height: auto;
-    margin: 0 0 4em 1.3em;
+    margin: 0 0 4em 0;
     border-radius: 0 0 60px 60px;
     background-color: transparent;
     color: white;
-    font-size: 1.5em;
+    font-size: 90%;
     padding: 4em 0 5em 0;
     background-color: #00000072;
     box-shadow:  -10px 10px 20px #000000c9,
@@ -1363,7 +1352,7 @@ body {
 .qsn-title {
     display: flex;
     align-items: start;
-    width: 85vw;
+    width: 95vw;
     font-size: 1.8em;
     text-align: start;
     letter-spacing: 2px;
@@ -1412,7 +1401,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 5% 0 0 0;
-    font-size: 3.5em;
+    font-size: 2em;
 }
 
 
@@ -1424,7 +1413,7 @@ body {
     align-items: center;
     text-align: center;
     padding: 0.4% 0 0.5% 0;
-    font-size: 1.1em;
+    font-size: 0.65em;
 
 }
 
@@ -1447,7 +1436,7 @@ body {
     padding: 0;
     margin: 1% 0 1% 0;
     font-family: 'Montserrat';
-    font-size: 1.1em;
+    font-size: 0.8em;
     text-align: center;
     
 }
@@ -1455,7 +1444,7 @@ body {
 
 #formulaire {
     box-sizing: border-box;
-     width: 80vw;
+     width: 90vw;
      height: 100%;
      display: flex;
      flex-direction: column;
@@ -1463,7 +1452,7 @@ body {
      align-items:flex-start;  
      left: 0; 
      padding:0;
-     margin: 10% 0 10% 0;
+     margin: 0;
      top: 0;
      border: 0;
  }
@@ -1472,7 +1461,7 @@ body {
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    width: 85%
+    width: 100%
 
  }
  
@@ -1480,15 +1469,15 @@ body {
      box-sizing: border-box;
      display: flex;
      align-items: start;
-     font-size: 1.2em;
+     font-size: 0.65em;
      width: 23%;
      padding: 0;
      font-weight: bold;
  }
 
  .field input {
-    height: 45px;
-    width: 80%;
+    height: 25px;
+    width: 60%;
  }
 
  #message_contact {
@@ -1500,7 +1489,7 @@ body {
      display: flex;
      align-items: start;
      width: 21%;
-     font-size: 1.2em;
+     font-size: 0.65em;
      padding: 0;
      font-weight: bold;
  }
@@ -1509,7 +1498,6 @@ body {
      background-color: #b6b6b6;
      font-weight: bold;
      width: 26%;
-     font-size: 1.5em;
      
  }
  
@@ -1545,15 +1533,16 @@ body {
      box-sizing: border-box;
      display: flex;
      justify-content: right;
-     width: 85%;
+     width: 100%;
      margin: 0;
+
  }
  #submit-btn {
     box-sizing: border-box;
     background-color: #dedede;
     color: rgb(0, 0, 0);
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 0.8em;
     padding: 2% 2% 2% 2%;
     border: none;
     width: 25%;
@@ -1588,7 +1577,7 @@ body {
  
  #icon-rsx-list a {
      box-sizing: border-box;
-     margin: 1% 5% 0 1%;
+     margin: 1% 8% 0 1%;
  
  }
  
@@ -1601,15 +1590,15 @@ body {
      align-items: center;
      width: 100vw;
      height: auto;
-     background-color: transparent;
-     padding: 2% 0 5% 0;
+     background-color: black;
+     padding: 2% 0 0 0;
 
  }
  
  #icon-rsx-container p {
      box-sizing: border-box;
-     font-size: 1.6em;
-     margin: 0 0 10% 0;
+     font-size: 0.8em;
+     margin: 0 0 8% 0;
  }
  
  .icon-rsx {
@@ -1617,7 +1606,7 @@ body {
      display: flex;
      justify-content: space-evenly;
      align-items: center;
-     width: 2.2em;
+     width: 18px;
      height: auto;    
      border-radius:50%;
      margin: 0;
@@ -1631,7 +1620,7 @@ body {
  }
  
  #lordicon {
-     font-size: 12px;
+     font-size: 5px;
  }
  
  #reference {
@@ -1647,7 +1636,7 @@ body {
  #reference p {
      color: white;
      font-family: 'Poppins';
-     font-size: 1.3em ;
+     font-size:xx-small ;
      margin: 0 0 0.5%;
  }
  
@@ -1661,46 +1650,46 @@ body {
     width: 100%;
     max-width: 85%;
     height: auto;
-    padding: 10% 5% 5% 5%;
+    padding: 15% 5% 10% 5%;
     z-index: 400;
 
 }
 #popup_maintenance h1 {
-    font-size: 2.5em;
+    font-size: 1.3em;
 
 }
 
 #popup_maintenance p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.4em;
+    font-size: 0.9em;
     font-weight: bold;
     text-align: center;
 }
 
 #icon_loader_message{
     display: flex;
-    width: 3.5em;
-    height: 3.5em;
+    width: 2em;
+    height: 2em;
     padding: 4% 5% 5% 5%;
     margin: 5% 0 5% 0;
 }   
 
 .close_maintenance {
-    width: 1.5em;
-    height: 1.5em;
+    width: 1em;
+    height: 1em;
 }
 
 #popup_reserve {
     top: 50%;
     max-width: 75%;
-    padding: 10% 5% 10% 5%;
+    padding: 15% 5% 10% 5%;
     border: 1px solid #eeca66;
     border-radius: 2em 2em 2em 2em;
     z-index: 400;
   }
 
   #popup_reserve h1 {
-    font-size: 2em;
+    font-size: 1.2em;
   }
 
   #popup_reserve p {
@@ -1708,14 +1697,14 @@ body {
     flex-direction: column;
     width: 100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.3em;
+    font-size: 0.9em;
     display: inline-block;
   }
 
   .close_popup {
-    width: 1.5em;
-    height: 1.5em;
-    font-size: 1.5em;
+    width: 1.2em;
+    height: 1.2em;
+    font-size: 1em;
   }
 
   #popup_reserve a {
