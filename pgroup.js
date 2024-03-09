@@ -217,18 +217,30 @@ $(document).ready(function () {
 $(document).ready(function () {
   // Au clic sur le lien "Accueil"
   $(".dropdown_link li:first-child a").click(function (e) {
-    e.preventDefault();
-    $("html, body").animate({ scrollTop: 0 }, "slow");
+    // Vérifie si le curseur est au top 0
+    if (window.scrollY === 0) {
+      e.preventDefault(); // Empêche le comportement par défaut du lien
+      location.reload(); // Recharge la page
+    }
+    else {
+      e.preventDefault(); // Empêche le comportement par défaut du lien
+      $("html, body").animate({ scrollTop: 0 }, "slow"); // Fait défiler la page vers le haut
+    }
   });
-});
 
-$(document).ready(function () {
+  // Au clic sur le lien "Accueil" dans la barre de navigation
   $(".navbar_link li:first-child a").click(function (e) {
-    e.preventDefault();
-    $("html, body").animate({ scrollTop: 0 }, "slow");
+    // Vérifie si le curseur est au top 0
+    if (window.scrollY === 0) {
+      e.preventDefault(); // Empêche le comportement par défaut du lien
+      location.reload(); // Recharge la page
+    }
+    else {
+      e.preventDefault(); // Empêche le comportement par défaut du lien
+      $("html, body").animate({ scrollTop: 0 }, "slow"); // Fait défiler la page vers le haut
+    }
   });
 });
-
 // ---------------      FIN  DEFILEMENT VERS HAUT ACCUEIL    ------------------------ //
 
 //---------------------------------------------------  DEBUT  LOGIN   --------------------------//
@@ -564,6 +576,18 @@ works.forEach((work) => {
     work.classList.add("active");
   });
 });
+
+
+//--------------------------- render page click accueil -------------------------- //_
+
+document.getElementById("accueil").addEventListener("click", function(event) {
+  if (window.scrollY === 0) { // Vérifie si le curseur est au top 0
+      event.preventDefault(); // Empêche le comportement par défaut du lien
+      location.reload(); // Recharge la page
+  }
+});
+
+// ------------------- fin render page click accueil  --------------------------//_
 
 //  --------------------  RESPONSIVE FIN CAROUSSEL REALISATION   ----------------//
 

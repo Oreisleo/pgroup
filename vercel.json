@@ -1,8 +1,18 @@
 {
   "rewrites": [
-    {"source": "/contact", "destination": "/api/contact"},
     {"source": "/(.*)", "destination": "/pgroup.html"}
   ],
+  "routes": [
+    {
+      "src": "/contact",
+      "dest": "/api/contact",
+      "methods": ["POST"]
+    }
+  ],
+  "env": {
+    "EMAIL_USER": "pgroupconsultingpro@gmail.com",
+    "EMAIL_PASSWORD": "Polo@2023@"
+  },
   "headers": [
     {
       "source": "/(.*)",
