@@ -14,5 +14,27 @@
     "EMAIL_PASSWORD": "Polo@2023@",
     "EMAIL_TO": "vicklionel@yahoo.fr"
   },
-  "headers": [] 
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400" 
+        },
+        {
+          "key": "Expires",
+          "value": "max-age=86400" 
+        },
+        {
+          "key": "ETag",
+          "value": "W/\"123456789\"" 
+        },
+        {
+          "key": "Vary",
+          "value": "Accept-Encoding" 
+        }
+      ]
+    }
+  ]
 }
