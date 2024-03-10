@@ -6,34 +6,32 @@ const nodemailer = require('nodemailer');
 
 const app = express();
 
-
+// Middleware pour analyser les données du formulaire
 app.use(bodyParser.urlencoded({ extended: true }));
 
-
+// Définir le routeur pour le formulaire de contact
 app.post('/contact', (req, res) => {
   const { firstname, surname, email, sujet, subject, pays } = req.body;
 
-  
+  // Créer un transporteur SMTP
   const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 587,
-    secure: false,
+    service: 'Gmail',
     auth: {
-      user: process.env.EMAIL_USER, 
-      pass: process.env.EMAIL_PASSWORD 
+      user: process.env.EMAIL_USER, // Utilisez la variable d'environnement pour l'e-mail d'utilisateur
+      pass: process.env.EMAIL_PASSWORD // Utilisez la variable d'environnement pour le mot de passe
     }
   });
 
- 
+  // Définir les options de l'e-mail
   const mailOptions = {
-    from: process.env.EMAIL_USER, 
-    to: process.env.EMAIL_TO, 
+    from: process.env.EMAIL_USER, // Adresse e-mail de l'expéditeur
+    to: process.env.EMAIL_TO, // Adresse e-mail de destination (définie dans .env)
     subject: sujet,
     text: `Nom: ${firstname} ${surname}\nE-mail: ${email}\nPays: ${pays}\nMessage: ${subject}`
   };
 
   try {
-   
+    // Envoyer l'e-mail
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
         console.error(error);
@@ -49,7 +47,7 @@ app.post('/contact', (req, res) => {
   }
 });
 
-
+// Démarrer le serveur
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Serveur démarré sur le port ${PORT}`);

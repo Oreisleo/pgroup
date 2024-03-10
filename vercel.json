@@ -20,11 +20,11 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=86400" 
+          "value": "public, max-age=3600" 
         },
         {
           "key": "Expires",
-          "value": "max-age=86400" 
+          "value": "max-age=3600" 
         },
         {
           "key": "ETag",
