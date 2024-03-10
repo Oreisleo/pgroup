@@ -241,13 +241,15 @@ $(document).ready(function () {
     }
   });
 
-  
-  document.getElementById("accueil").addEventListener("click", function(event) {
-    if (window.scrollY === 0) { 
-        event.preventDefault(); 
-        location.reload(); 
-    }
-  });
+  // Vérifier si l'élément avec l'identifiant "accueil" existe avant d'ajouter l'écouteur
+  if ($("#accueil").length > 0) {
+    $("#accueil").click(function (event) {
+      if (window.scrollY === 0) { 
+          event.preventDefault(); 
+          location.reload(); 
+      }
+    });
+  }
 });
 // ---------------      FIN  DEFILEMENT VERS HAUT ACCUEIL    ------------------------ //
 
