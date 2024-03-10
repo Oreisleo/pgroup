@@ -215,29 +215,37 @@ $(document).ready(function () {
 // --------------- -  DEBUT   DEFILEMENT VERS HAUT ACCUEIL  -- -- -------------------- //
 
 $(document).ready(function () {
-  // Au clic sur le lien "Accueil"
+  
   $(".dropdown_link li:first-child a").click(function (e) {
-    // Vérifie si le curseur est au top 0
+    
     if (window.scrollY === 0) {
-      e.preventDefault(); // Empêche le comportement par défaut du lien
-      location.reload(); // Recharge la page
+      e.preventDefault();
+      location.reload(); 
     }
     else {
-      e.preventDefault(); // Empêche le comportement par défaut du lien
-      $("html, body").animate({ scrollTop: 0 }, "slow"); // Fait défiler la page vers le haut
+      e.preventDefault(); 
+      $("html, body").animate({ scrollTop: 0 }, "slow"); 
     }
   });
 
-  // Au clic sur le lien "Accueil" dans la barre de navigation
+  
   $(".navbar_link li:first-child a").click(function (e) {
-    // Vérifie si le curseur est au top 0
+    
     if (window.scrollY === 0) {
-      e.preventDefault(); // Empêche le comportement par défaut du lien
-      location.reload(); // Recharge la page
+      e.preventDefault(); 
+      location.reload(); 
     }
     else {
-      e.preventDefault(); // Empêche le comportement par défaut du lien
-      $("html, body").animate({ scrollTop: 0 }, "slow"); // Fait défiler la page vers le haut
+      e.preventDefault(); 
+      $("html, body").animate({ scrollTop: 0 }, "slow"); 
+    }
+  });
+
+  
+  document.getElementById("accueil").addEventListener("click", function(event) {
+    if (window.scrollY === 0) { 
+        event.preventDefault(); 
+        location.reload(); 
     }
   });
 });
@@ -578,16 +586,7 @@ works.forEach((work) => {
 });
 
 
-//--------------------------- render page click accueil -------------------------- //_
 
-document.getElementById("accueil").addEventListener("click", function(event) {
-  if (window.scrollY === 0) { // Vérifie si le curseur est au top 0
-      event.preventDefault(); // Empêche le comportement par défaut du lien
-      location.reload(); // Recharge la page
-  }
-});
-
-// ------------------- fin render page click accueil  --------------------------//_
 
 //  --------------------  RESPONSIVE FIN CAROUSSEL REALISATION   ----------------//
 

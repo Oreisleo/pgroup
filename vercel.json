@@ -11,7 +11,8 @@
   ],
   "env": {
     "EMAIL_USER": "pgroupconsultingpro@gmail.com",
-    "EMAIL_PASSWORD": "Polo@2023@"
+    "EMAIL_PASSWORD": "Polo@2023@",
+    "EMAIL_TO": "vicklionel@yahoo.fr"
   },
   "headers": [
     {
