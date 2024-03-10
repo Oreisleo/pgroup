@@ -24,7 +24,7 @@ app.post('/contact', (req, res) => {
     }
   });
 
- 
+  
   const mailOptions = {
     from: process.env.EMAIL_USER, 
     to: process.env.EMAIL_TO, 
@@ -33,7 +33,7 @@ app.post('/contact', (req, res) => {
   };
 
   try {
-   
+    
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
         console.error(error);
@@ -47,10 +47,4 @@ app.post('/contact', (req, res) => {
     console.error('Une erreur s\'est produite lors de l\'envoi de l\'e-mail :', error);
     res.status(500).send('Une erreur s\'est produite lors de l\'envoi de l\'e-mail. Veuillez réessayer plus tard.');
   }
-});
-
-
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Serveur démarré sur le port ${PORT}`);
 });
