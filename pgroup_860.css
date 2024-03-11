@@ -349,7 +349,7 @@ body {
     align-items: center;
     width: 50%;
     height: 45px;
-    margin: 8% 0  20% 20%;
+    margin: 8% 0  50px 20%;
     color: #fff;
     background: #000000;
     font-size: 1.5em;
@@ -397,7 +397,7 @@ body {
         height: 35%;
         font-size: 2.5em;
         padding: 3% 2% 3% 6%; 
-        margin: 50% 0 0 16%;
+        margin: 40% 0 0 16%;
         background-color: hsla(0, 0%, 0%, 0.477);
         box-shadow:  25px 25px 30px #00000097,
                     -25px 0px 30px #000000ae;
@@ -407,7 +407,7 @@ body {
         display: flex;
         flex-direction: row;
         width: 50%;
-        bottom: 10%;
+        bottom: 80px;
         left: 50%;
         padding: 0;
         margin: 0;
@@ -699,9 +699,9 @@ body {
         height: 100%;
         position: absolute;
         left: 0.8em;
-        margin: 0 0 39em 0;
+        margin: 0 0 6em 0;
         font-size: 2em;
-        letter-spacing: 1.2em;
+        letter-spacing: 1.6em;
         z-index: 3;
      
     }

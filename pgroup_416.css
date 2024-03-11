@@ -382,7 +382,7 @@ body {
         height: 35%;
         font-size: 1.8em;
         padding: 3% 2% 3% 9%; 
-        margin: 80% 0 0 5%;
+        margin: 75% 0 0 5%;
         background-color: hsla(0, 0%, 0%, 0.477);
         box-shadow:  25px 25px 30px #00000097,
                     -25px 0px 30px #000000ae;
@@ -392,7 +392,7 @@ body {
         display: flex;
         flex-direction: row;
         width: 50%;
-        bottom: 10%;
+        bottom: 75px;
         left: 50%;
         padding: 0;
         margin: 0;
@@ -676,8 +676,8 @@ body {
         height: 100%;
         position: absolute;
         left: 0.8em;
-        margin: 0 0 38em 0;
-        font-size: 1.5em;
+        margin: 0 0 16em 0;
+        font-size: 1.3em;
         letter-spacing: 1em;
         z-index: 3;
      
